@@ -13,7 +13,9 @@ import './style/base.css';
 // 导入dataV
 import dataV from '@jiaminghi/data-view'
 // 注册dataV
-Vue.use(dataV)
+Vue.use(dataV);
+import axios from 'axios';
+Vue.prototype.$axios = axios;
 // 创建Vue实例，挂载到ip为app的div上
 new Vue({
   router,
